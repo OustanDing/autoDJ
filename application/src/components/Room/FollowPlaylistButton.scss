@@ -1,0 +1,27 @@
+.followPlaylistButton {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px 0 0;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 2px 8px;
+  top: -2px;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: white;
+    color: #23272a;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+}
+
+.notFollowing {
+  background-color: transparent;
+}
+
+.following {
+  background-color: #1db954;
+}

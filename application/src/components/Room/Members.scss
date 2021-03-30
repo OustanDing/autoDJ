@@ -1,0 +1,49 @@
+.membersListContainer {
+  flex: 1;
+  overflow: auto;
+  min-height: 0;
+
+  .membersList {
+    border-color: white;
+
+    .membersListRow {
+      height: 64px;
+
+      td {
+        padding: 0;
+
+        .displayName {
+          font-size: 1.1rem;
+          font-family: Poppins, sans-serif;
+        }
+      }
+
+      .profilePictureCell {
+        .profilePicture {
+          display: inline-block;
+          vertical-align: middle;
+          height: 48px;
+          width: 48px;
+        }
+
+        .fallbackPicture {
+          height: 48px;
+          width: 48px;
+        }
+      }
+
+      .followButtonCell {
+        text-align: right;
+
+        .followButton {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.profileLink {
+  text-decoration: none;
+  color: white;
+}

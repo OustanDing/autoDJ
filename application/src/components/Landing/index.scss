@@ -1,0 +1,213 @@
+#landingContainer {
+  position: relative;
+
+  .mainLandingContainer {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    .titleContainer {
+      margin-bottom: 0px;
+
+      .mainLandingLogo {
+        height: 96px;
+      }
+
+      .title {
+        margin: 0 0 -8px 0;
+      }
+
+      .description {
+        margin-top: 0;
+        font-size: 1.3rem;
+      }
+
+      .poweredByContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: middle;
+        margin-bottom: 24px;
+
+        .poweredByText {
+          display: inline-block;
+          margin: 0;
+        }
+
+        .spotifyLogo {
+          display: inline-block;
+          height: 36px;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .featuresContainer {
+      display: flex;
+      width: 60%;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+
+      .featureBox {
+        display: inline-block;
+        flex: 1 1 0;
+        border: 4px white solid;
+        border-radius: 16px;
+        padding: 32px;
+        margin: 16px;
+        height: 225px;
+
+        h3 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        .getStartedButton {
+          display: inline-block;
+          border: 2px solid white;
+          border-radius: 4px;
+          padding: 8px;
+          color: white;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-family: Poppins, sans-serif;
+          background-color: transparent;
+
+          &:hover {
+            background-color: white;
+            color: #23272a;
+            transition: background-color 0.2s, color 0.2s;
+            cursor: pointer;
+          }
+        }
+
+        .joinPartyInput {
+          margin-top: 8px;
+          border-bottom: 2px white solid;
+          text-align: center;
+          font-size: 1.2rem;
+          width: 80%;
+        }
+      }
+    }
+
+    .downChevronLinkWrapper {
+      position: absolute;
+      bottom: 24px;
+      .downChevron {
+        filter: invert(100%);
+        height: 28px;
+      }
+    }
+  }
+
+  .stepsContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 500px;
+    padding: 0 96px;
+    background-color: #000000;
+
+    .innerStepsContainer {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: top;
+
+      .stepBox {
+        display: inline-block;
+        flex: 0 1 auto;
+        width: 300px;
+
+        .stepIcon {
+          height: 96px;
+          width: 96px;
+          margin-bottom: 16px;
+        }
+
+        .stepTitle {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-top: 16px;
+
+    .infoHeader {
+      margin: 0;
+    }
+
+    .metrics {
+      margin: 0 0 24px 0;
+    }
+
+    .sliderContainer {
+      height: 500px;
+      width: 889px;
+      border: 4px white solid;
+      border-radius: 16px;
+      padding: 4px;
+      background-color: #23272a;
+
+      .slick-slide img {
+        height: 500px;
+        width: 889px;
+        margin: auto;
+        border-radius: 16px;
+      }
+    }
+
+    .partyScreenshot {
+      height: 500px;
+      border: 4px white solid;
+      border-radius: 16px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 36px;
+
+    .footerLogoLink {
+      margin: 16px 0 36px 0;
+
+      .footerLogo {
+        height: 56px;
+      }
+    }
+
+    .linksContainer {
+      .footerLink {
+        display: inline-block;
+        margin: 0 24px;
+        border-bottom: 2px transparent solid;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 2px #1db954 solid;
+        }
+      }
+    }
+  }
+}

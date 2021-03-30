@@ -1,0 +1,109 @@
+#roomContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .halfContainer {
+    display: inline-block;
+    height: 90%;
+    width: 40%;
+    flex: 0 1 auto;
+  }
+
+  .playerContainer {
+    text-align: right;
+  }
+
+  .playlistInfoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    text-align: left;
+
+    .playlistInfoContainerTop {
+      flex: 0 0 auto;
+
+      .playlistName {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        font-size: 3.4rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .playlistInfo {
+        margin-bottom: 8px;
+
+        .playlistSubtitle {
+          display: inline-block;
+          margin: 0;
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+
+      .playlistButtons {
+        margin-bottom: 16px;
+      }
+    }
+
+    .playlistInfoContainerBottom {
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 1 1 auto;
+      min-height: 0;
+
+      .startOwnPartyMessage {
+        margin-bottom: 0;
+        flex: 0 0 auto;
+
+        .startOwnPartyLink {
+          color: white;
+          text-decoration: none;
+          border-bottom: 2px transparent solid;
+
+          &:hover {
+            border-bottom: 2px #1db954 solid;
+          }
+        }
+      }
+    }
+  }
+}
+
+#loadingContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.linkButton {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px 0 0;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 2px 8px;
+  top: -2px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+
+  &:hover {
+    background-color: white;
+    color: #23272a;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+}

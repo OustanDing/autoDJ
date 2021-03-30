@@ -1,0 +1,38 @@
+.noMatches {
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+  width: 70%;
+  left: 15%;
+  border-bottom: 1px white solid;
+  padding: 4px 0;
+}
+
+.react-autosuggest__container--open {
+  position: relative;
+
+  .react-autosuggest__suggestions-container--open {
+    position: absolute;
+    background-color: black;
+    width: 70%;
+    left: 15%;
+
+    .react-autosuggest__suggestions-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      .react-autosuggest__suggestion {
+        border-bottom: 1px white solid;
+        cursor: pointer;
+        padding: 4px 0;
+      }
+
+      .react-autosuggest__suggestion--highlighted {
+        background-color: white;
+        color: #23272a;
+        transition: background-color 0.2s, color 0.2s;
+      }
+    }
+  }
+}

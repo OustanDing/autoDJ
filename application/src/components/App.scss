@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  color: white;
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  background-color: #23272a;
+
+  #root {
+    height: 100%;
+    width: 100%;
+
+    .app {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: Poppins, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+}
+
+a {
+  outline: none;
+}
+
+.underlineOnHover {
+  border-bottom: 2px transparent solid;
+
+  &:hover {
+    border-bottom: 2px #1db954 solid;
+  }
+}
+
+.snackbar {
+  & > div {
+    border: 2px white solid;
+    border-radius: 4px;
+    white-space: pre-wrap;
+  }
+
+  & > div > div {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+  }
+}
+
+#backgroundImage {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}

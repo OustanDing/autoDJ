@@ -1,0 +1,23 @@
+.copyLinkContainer {
+  margin-bottom: 16px;
+
+  .inviteFriendsText {
+    margin: 0 8px 0 auto;
+    font-size: 1.1rem;
+  }
+
+  .playlistURLTextBox {
+    display: inline;
+    font-size: 0.9rem;
+    border-bottom: 2px transparent solid;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 2px #1db954 solid;
+    }
+
+    &:focus {
+      outline-width: 0;
+    }
+  }
+}
