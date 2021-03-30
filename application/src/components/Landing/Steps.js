@@ -44,12 +44,14 @@ function Steps() {
 
 function StepBox({ stepNumber, title, description, icon }) {
   return (
-    <div className="stepBox">
-      <img className="stepIcon" src={icon} />
-      <h4 className="stepTitle">
-        {stepNumber}. {title}
-      </h4>
-      <p className="stepDescription">{description}</p>
+    <div>
+      <div className="stepBox">
+        <img className="stepIcon" src={icon} />
+        <h4 className="stepTitle">
+          {stepNumber}. {title}
+        </h4>
+        <p className="stepDescription">{description}</p>
+      </div>{' '}
     </div>
   )
 }

@@ -6,25 +6,56 @@
     display: flex;
     height: 100vh;
     width: 100vw;
+    padding: 36px 16px 72px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 1060px) {
+      & {
+        height: auto;
+      }
+    }
 
     .titleContainer {
       margin-bottom: 0px;
 
       .mainLandingLogo {
-        height: 96px;
+        height: 64px;
+        position: relative;
+        top: 4px;
+        margin-right: 8px;
+
+        @media only screen and (max-width: 540px) {
+          & {
+            height: 60px;
+          }
+        }
       }
 
       .title {
+        display: inline-block;
         margin: 0 0 -8px 0;
+
+        @media only screen and (max-width: 540px) {
+          & {
+            font-size: 60px;
+          }
+        }
       }
 
       .description {
+        max-width: 600px;
         margin-top: 0;
         font-size: 1.3rem;
+
+        @media only screen and (max-width: 540px) {
+          & {
+            font-size: 20px;
+          }
+        }
       }
 
       .poweredByContainer {
@@ -44,31 +75,54 @@
           height: 36px;
           margin-left: 8px;
         }
+
+        @media only screen and (max-width: 540px) {
+          & > .poweredByText {
+            font-size: 20px;
+          }
+
+          & > .spotifyLogo {
+            height: 28px;
+          }
+        }
       }
     }
 
     .featuresContainer {
       display: flex;
-      width: 60%;
-      flex-flow: row nowrap;
+      max-width: 1100px;
+      flex-flow: row wrap;
       justify-content: space-around;
       align-items: center;
 
       .featureBox {
+        min-height: 240px;
+        // min-width: 300px;
+        max-width: 400px;
         display: inline-block;
-        flex: 1 1 0;
         border: 4px white solid;
         border-radius: 16px;
         padding: 32px;
         margin: 16px;
-        height: 225px;
 
         h3 {
           margin: 0;
+
+          @media only screen and (max-width: 540px) {
+            & {
+              font-size: 28px;
+            }
+          }
         }
 
         p {
           font-size: 1.2rem;
+
+          @media only screen and (max-width: 540px) {
+            & {
+              font-size: 16px;
+            }
+          }
         }
 
         .getStartedButton {
@@ -114,29 +168,38 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 500px;
-    padding: 0 96px;
+    min-height: 500px;
+    padding: 36px 16px;
     background-color: #000000;
 
     .innerStepsContainer {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       justify-content: space-around;
       align-items: top;
 
-      .stepBox {
-        display: inline-block;
-        flex: 0 1 auto;
-        width: 300px;
-
-        .stepIcon {
-          height: 96px;
-          width: 96px;
-          margin-bottom: 16px;
+      & > div {
+        @media only screen and (max-width: 1200px) {
+          & {
+            width: 100%;
+          }
         }
 
-        .stepTitle {
-          margin: 0;
+        .stepBox {
+          display: inline-block;
+          flex: 1 1 auto;
+          max-width: 300px;
+          margin: 24px;
+
+          .stepIcon {
+            height: 96px;
+            width: 96px;
+            margin-bottom: 16px;
+          }
+
+          .stepTitle {
+            margin: 0;
+          }
         }
       }
     }
@@ -144,31 +207,42 @@
 
   .infoContainer {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    padding-top: 16px;
+    padding: 24px 16px;
 
     .infoHeader {
+      width: 100%;
       margin: 0;
+
+      @media only screen and (max-width: 540px) {
+        & {
+          font-size: 36px;
+        }
+      }
     }
 
     .metrics {
+      width: 100%;
       margin: 0 0 24px 0;
     }
 
     .sliderContainer {
-      height: 500px;
-      width: 889px;
+      flex: 1 1 0;
+      // max-height: 500px;
+      // min-height: 0;
+      min-width: 0;
+      max-width: 889px;
       border: 4px white solid;
       border-radius: 16px;
       padding: 4px;
       background-color: #23272a;
 
       .slick-slide img {
-        height: 500px;
-        width: 889px;
+        // height: 500px;
+        min-width: 0;
+        max-width: 889px;
         margin: auto;
         border-radius: 16px;
       }
