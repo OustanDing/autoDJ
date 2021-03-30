@@ -97,7 +97,6 @@
 
       .featureBox {
         min-height: 240px;
-        // min-width: 300px;
         max-width: 400px;
         display: inline-block;
         border: 4px white solid;
@@ -230,8 +229,6 @@
 
     .sliderContainer {
       flex: 1 1 0;
-      // max-height: 500px;
-      // min-height: 0;
       min-width: 0;
       max-width: 889px;
       border: 4px white solid;
@@ -240,7 +237,6 @@
       background-color: #23272a;
 
       .slick-slide img {
-        // height: 500px;
         min-width: 0;
         max-width: 889px;
         margin: auto;
