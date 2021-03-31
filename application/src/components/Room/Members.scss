@@ -5,9 +5,12 @@
 
   .membersList {
     border-color: white;
+    width: 100%;
+    border-collapse: collapse;
 
     .membersListRow {
       height: 64px;
+      border-bottom: 1px white solid;
 
       td {
         padding: 0;
@@ -24,6 +27,7 @@
           vertical-align: middle;
           height: 48px;
           width: 48px;
+          margin-right: 8px;
         }
 
         .fallbackPicture {
@@ -46,4 +50,10 @@
 .profileLink {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 450px) {
+  .followButtonCell {
+    display: none !important;
+  }
 }

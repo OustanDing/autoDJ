@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
-import {
-  Avatar,
-  Table,
-  TableBody,
-  TableRow,
-  TableCell,
-} from '@material-ui/core'
+import { Avatar } from '@material-ui/core'
 
 import constants from '../../constants'
 
@@ -36,11 +30,11 @@ function Members({ host, members }) {
 
   return (
     <div className="membersListContainer">
-      <Table className="membersList">
-        <TableBody>
+      <table className="membersList">
+        <tbody>
           {membersInfo.map((member, i) => (
-            <TableRow className="membersListRow" key={i}>
-              <TableCell className="profilePictureCell">
+            <tr className="membersListRow" key={i}>
+              <td className="profilePictureCell">
                 <a
                   className="profileLink"
                   href={`${SPOTIFY_PROFILE_URL}/${member.spotifyID}`}
@@ -61,8 +55,8 @@ function Members({ host, members }) {
                     />
                   )}
                 </a>
-              </TableCell>
-              <TableCell>
+              </td>
+              <td>
                 <a
                   className="profileLink"
                   href={`${SPOTIFY_PROFILE_URL}/${member.spotifyID}`}
@@ -73,8 +67,8 @@ function Members({ host, members }) {
                     {member.displayName} {host === member._id && '(host)'}
                   </p>
                 </a>
-              </TableCell>
-              <TableCell className="followButtonCell">
+              </td>
+              <td className="followButtonCell">
                 <iframe
                   className="followButton"
                   src={`https://open.spotify.com/follow/1/?uri=spotify:user:${member.spotifyID}&size=basic&theme=dark`}
@@ -84,11 +78,11 @@ function Members({ host, members }) {
                   frameBorder="0"
                   allowtransparency="true"
                 />
-              </TableCell>
-            </TableRow>
+              </td>
+            </tr>
           ))}
-        </TableBody>
-      </Table>
+        </tbody>
+      </table>
     </div>
   )
 }

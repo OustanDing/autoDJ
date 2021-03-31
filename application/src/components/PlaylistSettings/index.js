@@ -8,7 +8,6 @@ import GenresInput from './GenresInput'
 import { msToMin } from '../../utils'
 import { validatePlaylistSettings } from './utils'
 import constants, { MESSAGES } from '../../constants'
-import logo from '../../images/logo.png'
 
 import './index.scss'
 
@@ -114,7 +113,6 @@ function PlaylistSettings({
   return (
     <div className="playlistSettingsContainer">
       <div className="innerPlaylistSettingsContainer">
-        <img className="logo" src={logo} />
         <h1 className="pageTitle">Playlist Settings</h1>
         <p className="loggedInAs">(Logged in as {displayName})</p>
         <p className="note">

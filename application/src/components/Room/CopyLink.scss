@@ -7,9 +7,14 @@
   }
 
   .playlistURLTextBox {
-    display: inline;
+    display: inline-block;
     font-size: 0.9rem;
     border-bottom: 2px transparent solid;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    min-width: 0;
 
     &:hover {
       cursor: pointer;

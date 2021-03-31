@@ -1,10 +1,11 @@
 .playlistSettingsContainer {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  padding: 24px 16px;
 
   .innerPlaylistSettingsContainer {
     position: relative;
@@ -12,12 +13,12 @@
     text-align: center;
     max-width: 700px;
 
-    .logo {
-      height: 96px;
-    }
-
     .pageTitle {
       margin: 0;
+
+      @media only screen and (max-width: 720px) {
+        font-size: 48px;
+      }
     }
 
     .loggedInAs {
@@ -28,7 +29,7 @@
 
     .note {
       display: inline-block;
-      width: 70%;
+      max-width: 400px;
     }
 
     .inputField {
